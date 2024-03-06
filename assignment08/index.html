@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/index.css">
+
+<body>
+  <div class="mo" style="width: fit-content;background-color:black;color: white; position: absolute;
+  top: 50%;left: 50%;transform: translate(-50%,-50%);padding:80px 40px;">
+    <form action="" method="post">
+      <div class="gh">
+        <label for="username">Username *</label>
+        <input type="text" id="username" name="username" required placeholder="Please, Enter Your Username">
+      </div>
+
+      <hr>
+
+      <div class="gh">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Please, Enter Your pass">
+      </div>
+
+      <hr>
+
+      <div class="gh">
+        <label for="mobile">Mobile *</label>
+        <input type="tel" id="mobile" name="mobile" pattern="\+\d{2}\(\d{3}\)\d{3}" required
+          placeholder="يرجى إدخال رقم الجوال بالصيغة +20100 (234) 123">
+      </div>
+
+      <hr>
+
+      <div class="gh">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required placeholder="example@example.com">
+      </div>
+
+      <hr>
+
+      <div class="gh">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Please, Enter any subject ">
+      </div>
+
+      <hr>
+
+      <div class="gh">
+        <label for="tips">General Advices:</label>
+        <input type="text" id="tips" name="tips" placeholder="Please, Enter any text here">
+      </div>
+
+      <hr>
+
+      <!-- حقل مخفي -->
+      <div class="gh">
+        <input type="hidden" name="hiddenField" value="123">
+      </div>
+
+      <hr>
+
+      <!-- زر لحذف النموذج -->
+      <input type="reset" value="Empty Form">
+
+      <!-- زر لإرسال البيانات -->
+      <input type="submit" value="Send Data">
+    </form>
+  </div>
+</body>
+
+</html>
